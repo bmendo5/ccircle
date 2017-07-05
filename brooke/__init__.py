@@ -11,5 +11,7 @@ while window.isOpen():
         window.drawCircle(i, 200, x, (229/255), (204/255), 1)
         i += 40
         j += 50
-    mousePosX, mousePosY = window.getMousePos()
+    #mousePosX, mousePosY = window.getMousePos()
+    #print(mousePosX, mousePosY)
+    window.drawTri(750, 260, 750, 300, 680, 280, 1, 1, 1)
     window.update()
