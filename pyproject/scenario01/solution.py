@@ -78,4 +78,4 @@ class Solution:
             cat.turnLeft()
             cat.walk()
 
-        self.moves += 1)
+        self.moves += 1
