@@ -60,6 +60,17 @@ class StockTrader:
     def trade(self, account, market):
         # This is a very basic and bad starter strategy: get a list of stocks, buy any stock that is less than $10
         # (if we can afford it); sell any stock that is more than $20 (if we own it). You must do better than this!
+
+        accBalance = account.getBalance()
+        ownedShares = account.getShares()
+        symbols = market.getStockSymbols()
+
+        for sym in symbols:
+
+
+
+
+        '''
         syms = market.getStockSymbols()
         for sym in syms:
             price = market.getPrice(sym)
@@ -67,3 +78,4 @@ class StockTrader:
                 market.buy(account, sym, 1)
             if price > 10 and account.getShares(sym) > 0:
                 market.sell(account, sym, 1)
+        '''
