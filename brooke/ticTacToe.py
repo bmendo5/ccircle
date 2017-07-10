@@ -18,7 +18,7 @@ while window.isOpen():
 
     window.update()
 
-# use 0 and 1
+# use 0 and 1 for player 1 and player 2
 playerInputs = [2,3,4,5,6,7,8,9,10]
 turn = True
 while checkWin(playerInputs):
