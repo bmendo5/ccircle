@@ -3,6 +3,7 @@ import ccircle
 window = ccircle.Window("Tic Tac Toe", 600,600)
 window.showMouse()
 
+playerInputs = [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 while window.isOpen():
     window.clear(1,1,1)
@@ -19,5 +20,16 @@ while window.isOpen():
 
     if ccircle.isMouseDown('left'):
         points.append((mx, my))
+
+    turn = True
+
+    while !checkWin(playerInputs):
+        turn = not turn  # swaps turns
+        input()
+
+    if turn:
+        print("Player 1 Wins!")
+    else:
+        print("Player 2 Wins!")
 
     window.update()
