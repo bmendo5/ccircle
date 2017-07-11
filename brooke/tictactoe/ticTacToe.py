@@ -1,23 +1,5 @@
 import ccircle
 
-window = ccircle.Window("Tic Tac Toe", 600,600)
-window.showMouse()
-
-while window.isOpen():
-    window.clear(1,1,1)
-
-    #Tic Tac Toe Borders
-    window.drawLine(200, 100, 200, 500, 5, 0,0,0)   #vertical left
-    window.drawLine(350, 100, 350, 500, 5, 0,0,0)   #vertical right
-    window.drawLine(75, 225, 475, 225, 5, 0,0,0)    #horizontal top
-    window.drawLine(75, 375, 475, 375, 5, 0,0,0)    #horizontal bottom
-
-    #mousePosX, mousePosY = window.getMousePos()
-    #print(mousePosX, mousePosY)
-
-
-    window.update()
-
 # use 0 and 1 for player 1 and player 2
 playerInputs = [2,3,4,5,6,7,8,9,10]
 turn = True

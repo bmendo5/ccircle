@@ -22,8 +22,8 @@ start = time.time()
 dt = 1.0 / 60.0
 while window.isOpen():
     window.clear(0.1, 0.1, 0.1)
-    my_ball.apply_force(0, -9.8)
-    my_ball.apply_force(100, 0)
+    my_ball.apply_force(0, 9.8)
+    my_ball.apply_force(10, 0)
     my_world.update(dt)
     my_world.draw(window)
     window.update()

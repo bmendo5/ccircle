@@ -13,7 +13,7 @@ class Ball:
         self.fy += fy
 
     def draw(self, window):
-        window.drawCircle(self.x, self.y, 16, 1, 1, 0.25)
+        window.drawCircle(self.x, self.y, 16, .45, .9, 0.7)
 
     def update(self, dt):
         self.x += dt * self.vx
