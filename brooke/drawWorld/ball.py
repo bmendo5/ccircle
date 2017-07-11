@@ -5,7 +5,7 @@ class Ball:
         self.vx = 0
         self.vy = 0
         self.fx = 0
-        self.fx = 0
+        self.fy = 0
         self.mass = 1
 
     def apply_force(self, fx, fy):
@@ -24,3 +24,7 @@ class Ball:
         self.vy += dt * accel_y
         self.fx = 0
         self.fy = 0
+
+        if self.y > 500:
+            self.vy *= -0.99
+            self.y = 500
